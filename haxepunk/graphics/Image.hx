@@ -181,6 +181,30 @@ class Image extends Graphic
 	}
 
 	/**
+	 * Creates a new ellipse Image.
+	 * @param	radiusX		X radius of the ellipse.
+	 * @param	radiusY		Y radius of the ellipse.
+	 * @param	color		Color of the ellipse.
+	 * @param	alpha		Alpha of the ellipse.
+	 * @return	A new Image object of a ellipse.
+	 */
+	public static function createEllipse(radiusX:Int, radiusY:Int, color:Color = 0xFFFFFF, alpha:Float = 1):Image
+	{
+		if (radiusX == 0 || radiusY == 0)
+			throw "Illegal ellipse, radius cannot be 0.";
+
+		var texture:Texture = Texture.create(radiusX * 2, radiusY * 2, true, 0);
+		texture.drawEllipse(0, 0, 2*radiusX, 2*radiusY);
+
+		var image = new Image(Atlas.loadImageAsRegion(texture));
+
+		image.color = color;
+		image.alpha = alpha;
+
+		return image;
+	}
+
+	/**
 	 * Centers the Image's originX/Y to its center.
 	 */
 	override public function centerOrigin()

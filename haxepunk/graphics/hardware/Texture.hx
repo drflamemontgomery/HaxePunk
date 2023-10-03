@@ -21,5 +21,6 @@ class Texture
 	public function removeColor(color:Color) {}
 	public function clearColor(color:Color) {}
 	public function drawCircle(x:Float, y:Float, radius:Float) {}
+	public function drawEllipse(x:Float, y:Float, radiusX:Float, radiusY:Float) {}
 	public function dispose() {}
 }

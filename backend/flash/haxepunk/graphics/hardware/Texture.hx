@@ -38,5 +38,13 @@ abstract Texture(BitmapData) from BitmapData to BitmapData
 		this.draw(sprite);
 	}
 
+  public function drawEllipse(x:Float, y:Float, radiusX:Float, radiusY:Float) {
+    var sprite = new flash.display.Sprite();
+    sprite.graphics.clear();
+    sprite.graphics.beginFill(0xFFFFFF);
+    sprite.graphics.drawEllipse(x, y, radiusX, radiusY);
+    this.draw(sprite);
+  }
+
 	static var _zero = new Point(0, 0);
 }
