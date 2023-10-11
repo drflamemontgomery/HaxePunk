@@ -20,7 +20,9 @@ class Texture
 
 	public function removeColor(color:Color) {}
 	public function clearColor(color:Color) {}
+  public function clearRect(rect:flash.geom.Rectangle) {}
 	public function drawCircle(x:Float, y:Float, radius:Float) {}
 	public function drawEllipse(x:Float, y:Float, radiusX:Float, radiusY:Float) {}
+  public function drawTexture(x:Float, y:Float, texture:Texture, sourceRect:flash.geom.Rectangle);
 	public function dispose() {}
 }

@@ -128,8 +128,8 @@ class AtlasData
 		}
 		else
 		{
-			var cos = Math.cos(-angle * MathUtil.RAD);
-			var sin = Math.sin(-angle * MathUtil.RAD);
+			var cos = Math.cos(-angle);
+			var sin = Math.sin(-angle);
 			a = cos * scaleX; // m00
 			b = -sin * scaleY; // m10
 			c = sin * scaleX; // m01

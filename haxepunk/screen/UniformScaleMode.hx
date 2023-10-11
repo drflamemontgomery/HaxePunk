@@ -1,6 +1,6 @@
 package haxepunk.screen;
 
-@:enum
+enum
 abstract UniformScaleType(Int)
 {
 	/**

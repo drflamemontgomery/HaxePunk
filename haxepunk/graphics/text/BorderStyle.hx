@@ -1,6 +1,6 @@
 package haxepunk.graphics.text;
 
-@:enum
+enum
 abstract BorderStyle(Int) from Int to Int
 {
 	/* Draws a thick shadow down and to the right. */

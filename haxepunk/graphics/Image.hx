@@ -16,7 +16,7 @@ import haxepunk.math.Vector2;
 class Image extends Graphic
 {
 	/**
-	 * Rotation of the image, in degrees.
+	 * Rotation of the image, in radians.
 	 */
 	public var angle:Float;
 
@@ -118,7 +118,6 @@ class Image extends Graphic
 		{
 			_point.x = floorX(camera, point.x) - floorX(camera, originX) - floorX(camera, camera.x * scrollX) + x;
 			_point.y = floorY(camera, point.y) - floorY(camera, originY) - floorY(camera, camera.y * scrollY) + y;
-			var angle = angle * MathUtil.RAD;
 			var cos = Math.cos(angle);
 			var sin = Math.sin(angle);
 			var a = sx * cos * fsx;

@@ -82,7 +82,7 @@ class GestureType
 	}
 }
 
-@:enum
+enum
 abstract GestureMode(Int)
 {
 	var READY = 0;
@@ -93,7 +93,7 @@ abstract GestureMode(Int)
 	var FINISHED = 5;
 }
 
-@:enum
+enum
 abstract Gesture(Int) from Int to Int
 {
 	// a quick one-finger tap

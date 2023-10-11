@@ -5,7 +5,7 @@ package haxepunk.input.gamepad;
  *
  * @since	4.1.0
  */
-@:enum
+enum
 abstract GamepadAxis(Int) from Int to Int
 {
 	public static var all:Array<GamepadAxis> = [LeftTrigger, RightTrigger, LeftX, LeftY, RightX, RightY];

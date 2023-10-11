@@ -29,7 +29,7 @@ typedef FormatTagOptions =
 	@:optional var size:Int;
 }
 
-@:enum
+enum
 abstract AlignType(Int) to Int
 {
 	var Left = 0;

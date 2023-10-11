@@ -12,7 +12,7 @@ import haxepunk.graphics.atlas.TextureAtlas;
 import haxepunk.graphics.hardware.Texture;
 import haxepunk.utils.Utf8String;
 
-@:enum
+enum
 abstract BitmapFontFormat(Int)
 {
 	var XML = 1;

@@ -2,7 +2,7 @@ package haxepunk.input;
 
 import haxepunk.HXP;
 
-@:enum
+enum
 abstract MouseButton(Int) from Int to Int
 {
 	var LEFT = 1;

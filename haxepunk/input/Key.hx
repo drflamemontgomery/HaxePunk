@@ -3,7 +3,7 @@ package haxepunk.input;
 /**
  * List of keys to be used with `Input`.
  */
-@:enum
+enum
 abstract Key(Int) from Int to Int
 {
 	/**

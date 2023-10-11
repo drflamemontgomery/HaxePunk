@@ -46,5 +46,21 @@ abstract Texture(BitmapData) from BitmapData to BitmapData
     this.draw(sprite);
   }
 
+  public function drawTexture(x:Float, y:Float, texture:Texture, sourceRect:flash.geom.Rectangle) {
+    //this.copyPixels(texture, clipRect
+    //var transform = new flash.geom.Matrix();
+    //transform.translate(x, y);
+    //var clipRect = new flash.geom.Rectangle(0, 0, 16, 16);
+    //this.draw(texture, transform, null, null, clipRect, false);
+    this.copyPixels(texture, sourceRect, new flash.geom.Point(x, y));
+    //var width = clipRect == null ? 16 : clipRect.width;
+    //var height = clipRect == null ? 16 : clipRect.height;
+    //this.fillRect(new flash.geom.Rectangle(x, y, width, height), 0xFFFFFFFF);
+  }
+
+  public function clearRect(rect:flash.geom.Rectangle) {
+    this.fillRect(rect, 0x00000000);
+  }
+
 	static var _zero = new Point(0, 0);
 }
